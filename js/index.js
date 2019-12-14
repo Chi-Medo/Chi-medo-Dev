@@ -77,7 +77,7 @@ function renderProduct() {
  
   var template = $('#template').html();
 
-  Mustache.parse(template);
+ 
   var rendered = Mustache.render(template, {
     UserArray
   });
@@ -95,7 +95,7 @@ async function callStatic(func, args) {
     contractAddress
   });
 
-  const calledGet = await contract.call(func, args, {
+  const  = await contract.call(func, args, {
     callStatic: true
   }).catch(e => console.error(e));
 
@@ -271,8 +271,7 @@ $('#submitBtn').click(async function () {
 
 
 
-$("#section").on("click", ".hirebutton", async function (event) {
-  $("#loadings").show();
+
   console.log("Hiring Worker")
 
   // targets the element being clicked
