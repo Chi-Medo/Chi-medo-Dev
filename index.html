@@ -42,7 +42,7 @@
       <div class="page-wrapper bg-dark p-t-100 p-b-50">
         <div class="wrapper wrapper--w900">
           <div class="card card-6">
-            <div class="card-heading">
+            <div class="card-heading" >
               <h6 class="title">
                 UPLOAD YOUR CV AND GET HIRED ON THE BLOCKCHAIN
               </h6>
@@ -56,6 +56,8 @@
             <div class="card-body">
               <div class="form-row">
 
+                  <hr style="color: crimson;">
+
 
                 <h2>Hire A User Here</h2>
                   <div id="section">
@@ -66,8 +68,14 @@
                     </div>
                     <br>
                     <br>
-
+                    <hr style="color: crimson;">
+                    
                 <h2>Register To Be Hired</h2>
+                <br>
+                <br>
+
+                
+
                 <div class="name">Full name</div>
                 <div class="value">
                   <input
@@ -159,7 +167,7 @@
                 <input type="file"  id="addedFile" style="border: solid 1px blue">
                
             <div class="card-footer">
-              <button class="btn btn--radius-2 btn--blue-2" id="submitBtn">
+              <button style="color: crimson;" class="btn btn--radius-2 btn--blue-2" id="submitBtn">
                 Upload here
               </button>
             </div>
@@ -174,6 +182,7 @@
 
       <script id="template" type="x-tmpl-mustache">
          {{#UserArray}}
+         <hr style="color: crimson;">
          <div>
 
             <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Primer/10.8.1/build.css" />
@@ -198,7 +207,7 @@
             <li>
               <b>{{email}}</b> is my mail </li>
             <li>
-              <li>Hired : {{hired}}</li>
+              <li>Hired : {{hired}} time(s)</li>
             I can work {{hours}} hours everyday
             <!-- <a href="https://ipfs.infura.io/{{hash}}">Click to download my CV</a> -->
 
@@ -219,6 +228,7 @@
            
             
          </div>
+         <hr style="color: crimson;">
        
 
         {{/UserArray}}
