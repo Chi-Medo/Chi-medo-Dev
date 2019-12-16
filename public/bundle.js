@@ -2170,6 +2170,7 @@ async function contractCall(func, args, value) {
 document.addEventListener('DOMContentLoaded', async () => {
 
   $("#loadings").show();
+  $('#registerSection').hide();
 
 
   const node = await IpfsHttpClient({
@@ -2188,6 +2189,7 @@ var buffer = null
 
 window.addEventListener('load', async () => {
   $("#loadings").show();
+  $('#registerSection').hide();
 
   client = await Ae.Aepp()
 
@@ -2357,5 +2359,32 @@ $("#section").on( "click", ".downloadCVButton", async function (event) {
   
   $("#loadings").hide();
 });
+
+// Show the Register form
+
+$('#registerLink').click( function(event){
+  console.log("Showing register form")
+  $('#registerSection').show();
+  $('#section').hide();
+
+})
+
+// Show the registered users
+
+$('#userLink').click( function(event){
+  console.log("Showing user list")
+  $('#registerSection').hide();
+  $('#section').show();
+
+})
+
+// Go back to the default page
+$('#homeLink').click( function(event){
+  console.log("Showing home")
+
+  location.reload(true)
+  
+
+})
 }).call(this,require("buffer").Buffer)
 },{"buffer":2}]},{},[4]);
